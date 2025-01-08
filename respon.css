@@ -1,0 +1,128 @@
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.cross-icon {
+    display: none;
+}
+
+.cross-icon.show {
+    display: block;
+}
+
+.hamburger-icon.hide {
+    display: none;
+}
+
+/* Menu Styles */
+.menu {
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+/* Responsive Breakpoints */
+@media screen and (max-width: 1024px) {
+    .my-heading {
+        font-size: 2.5rem;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+    }
+    
+    .contact-details {
+        max-width: 600px;
+    }
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.cross-icon {
+    display: none;
+}
+
+.cross-icon.show {
+    display: block;
+}
+
+.hamburger-icon.hide {
+    display: none;
+}
+
+/* Menu Styles */
+.menu {
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+    /* General Spacing */
+    .portfolio, .services, .contact, .about {
+        padding: 3rem 1rem;
+    }
+    
+    /* Typography */
+    .my-heading {
+        font-size: 1.75rem;
+    }
+    
+    .greet-heading {
+        font-size: 1.25rem;
+    }
+    
+    .sub-heading {
+        font-size: 1rem;
+    }
+    
+    /* Forms */
+    .form-controls {
+        padding: 0.75rem;
+    }
+    
+    /* Footer */
+    .footer-content h4 {
+        font-size: 0.875rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header, .footer, .contact-form-container {
+        display: none;
+    }
+    
+    body {
+        background: white;
+    }
+    
+    .my-card {
+        break-inside: avoid;
+        box-shadow: none;
+    }
+}
